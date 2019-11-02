@@ -1,0 +1,32 @@
+SYSTEM_APPLICATION_NAME: Earnr
+ADMIN_EMAIL: admin@yopmail.com
+FROM_EMAIL:  admin@yopmail.com
+WEBSITE_OWNER: 'Admin'
+TELEPHONE: '+61 458 666 456'
+ADMIN_PAGE_LIMIT: '20'
+FRONT_PAGE_LIMIT: '20'
+ADMIN_DATE_FORMAT: 'd F, Y'
+ADMIN_DATE_TIME_FORMAT: 'd F, Y H:i A'
+FRONT_DATE_FORMAT: 'd F, Y'
+FRONT_DATE_TIME_FORMAT: 'd F, Y'
+RESET_URL_EXPIRED: '24'
+DEVELOPMENT_MODE: '1'
+DEFAULT_CURRENCY: USD
+CONTACT_US_TEXT: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+GOOGLE_MAP_KEY: AIzaSyD9pg6_fzfgDHJFSW0wkrIcuCOw_V9qOfM
+ADDRESS: '6-Kha-9, Jawahar Nagar, <br> Jaipur, Rajasthan - 302004, India'
+SMTP_ALLOW: '1'
+SMTP_EMAIL_HOST: mail.dotsquares.com
+SMTP_USERNAME: wwwsmtp@dotsquares.com
+SMTP_PASSWORD: 'dsmtp909#'
+SMTP_PORT: '25'
+SMTP_TLS: '1'
+MAIN_FAVICON: 82nIMwo7JxzkBOEtWXmS1NXybgitI6vO9W9W7h31.png
+MAIN_LOGO: KnYUfpBZcodHER6nzOyZ706eAG4Mwt08dbDJtuqm.png
+dar: test1
+ergrweg: rwegtt
+CONTACT_EMAIL: info@roadtrans.com.au
+FACEBOOK_URL: 'https://www.facebook.com'
+TWITTER_URL: 'https://www.twitter.com'
+LINKEDIN_URL: 'https://www.linkedin.com'
+GOOGLE_URL: 'https://www.google.com'

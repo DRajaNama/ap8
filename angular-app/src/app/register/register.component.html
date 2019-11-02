@@ -1,0 +1,113 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="alert alert-primary">
+                    <h1> User Registration</h1>
+                    <form >
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="agreement" name="agreement" [(ngModel)]="agreement"> Accept & Agree T&Cs</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile:</label>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="mobile" class="form-control" id="mobile" name="moblie" [(ngModel)]="mobile" >
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" (click)="send_otp()">Send OTP</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="otp_number">Enter OTP:</label>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="otp_number" name="otp_number" [(ngModel)]="otp_number" >
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" (click)="submit_otp()">Verify OTP</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                           <a href="javascript"> Resend OTP</a>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email" >
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" id="password" name="password" [(ngModel)]="password" >
+                        </div>
+                        <div class="form-group">
+                            <label for="cpassword">Confirtm Password:</label>
+                            <input type="password" class="form-control" id="cpassword" name="cpassword" [(ngModel)]="cpassword" >
+                        </div>
+                        <button type="submit" class="btn btn-outline-secondary" (click)="register()">Submit</button>
+                    </form> 
+            </div>    
+        </div>
+        <div class="col-lg-6">
+                <div class="alert alert-primary">
+                        <h1>Fill Detail For KYC </h1>
+                        <form >
+                           <div class="form-group">
+                                <label for="first_name">First Name:</label>
+                                <input type="text" class="form-control" id="first_name" name="first_name" [(ngModel)]="first_name" >
+                            </div>
+                            <div class="form-group">
+                                <label for="middle_name">Middle Name:</label>
+                                <input type="text" class="form-control" id="middle_name" name="middle_name" [(ngModel)]="middle_name" >
+                            </div>
+                            <div class="form-group">
+                                <label for="last_name">Surname:</label>
+                                <input type="text" class="form-control" id="last_name" name="last_name" [(ngModel)]="last_name" >
+                            </div>
+                            <div class="form-group">
+                                <label for="dob">Date Of Birth:</label>
+                                <input type="date" class="form-control" id="dob" name="dob" [(ngModel)]="dob" >
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Residential Address:</label>
+                                <app-google-places (setAddress)="getAddress($event)" adressType="geocode" ></app-google-places>
+                            </div>
+                            <div class="form-group">
+                                <label for="emp_status">Current Employement Status:</label>
+                                <select class="form-control" id="emp_status" name="emp_status" [(ngModel)]="emp_status" >
+                                    <option value="student">Student</option>
+                                    <option value="employee">Employee</option>
+                                    <option value="unemployee">Unemployee</option>
+                                    <option value="other">other</option>
+                                </select>    
+                            </div>
+                            <div class="form-group">
+                                <label for="emp_post">Current Employement Area:</label>
+                                <select class="form-control" id="emp_post" name="emp_post" [(ngModel)]="emp_post" >
+                                    <option value="owner">owner</option>
+                                    <option value="employee">Employee</option>
+                                    <option value="director">Director</option>
+                                    <option value="other">other</option>
+                                </select>    
+                            </div>
+                            <div class="form-group">
+                                <label for="tax_status">Do you have Tax paid:</label><br>
+                                Yes <input type="radio" value="1" name="tax_status" [(ngModel)]="tax_status" >
+                                No <input type="radio"  value="0" name="tax_status" [(ngModel)]="tax_status" >
+                            </div>
+                            <div class="form-group">
+                                <label for="document">Select Document:</label>
+                                <select class="form-control" id="document" name="document" [(ngModel)]="document" >
+                                    <option value="driving_licence">Driving Licence</option>
+                                    <option value="passport">Passport</option>
+                                    <option value="medicare">Medicare Card</option>
+                                    <option value="other">other</option>
+                                </select>    
+                            </div>
+                            <div class="form-group">
+                                <label for="document_number">Document Number:</label>
+                                <input type="text" class="form-control" id="document_number" name="document_number" [(ngModel)]="document_number" >
+                            </div>
+                            <button type="submit" class="btn btn-outline-secondary" (click)="submitKYC()">Submit</button>
+                        </form> 
+                </div>    
+            </div>
+    </div>
+</div>
+

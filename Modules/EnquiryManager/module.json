@@ -1,0 +1,14 @@
+{
+    "name": "EnquiryManager",
+    "alias": "enquirymanager",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\EnquiryManager\\Providers\\EnquiryManagerServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
